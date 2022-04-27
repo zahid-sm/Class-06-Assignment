@@ -1,36 +1,305 @@
 const studentData = [
-    ['Sm_Zahid','1285','25','04','Male','Rajshahi','5220','5.00'],
-    ['Sm_Elias','1286','32','05','Male','Dhaka','3230','4.56'],
-    ['Sm_Firoj','1287','18','03','Male','Rajshahi','3302','2.11'],
-    ['Joynal','1288','32','05','Male','Pabna','6120','5.00'],
-    ['Firoza','1289','21','05','Female','Dhaka','2500','3.00'],
-    ['Jim','1290','16','03','Male','Rajshahi','3500','2.5'],
-    ['Helena','1291','23','04','Female','Pabna','4650','3.5'],
-    ['Jabbar','1292','32','05','Male','Dhaka','4403','4.00'],
-    ['Raji','1293','12','03','Female','Pabna','5200','3.96'],
-    ['Hira','1294','24','04','Female','Dhaka','3220','4.98'],
+    {
+        names : 'Sm_Zahid',
+        roll : 1285,
+        reg : '128536',
+        gender : 'Male',
+        age : '17',
+        class : '3',
+        location : 'Rajshahi',
+        fee : 1450
+    },
+    {
+        names : 'Sm Elias',
+        roll : 1284,
+        reg : '12855',
+        gender : 'Male',
+        age : '24',
+        class : '5',
+        location : 'Dhaka',
+        fee : 2150
+    },
+    {
+        names : 'Firoj Hasan',
+        roll : 1288,
+        reg : '128584',
+        gender : 'Male',
+        age : '32',
+        class : '3',
+        location : 'Rajshahi',
+        fee : 5120
+    },
+    {
+        names : 'Sm Joynal',
+        roll : 1288,
+        reg : '12857',
+        gender : 'Male',
+        age : '41',
+        class : '4',
+        location : 'Dhaka',
+        fee : 1480
+    },
+    {
+        names : 'jim',
+        roll : 1290,
+        reg : '12802',
+        gender : 'Male',
+        age : '16',
+        class : '5',
+        location : 'Rajshahi',
+        fee : 2000
+    },
+    {
+        names : 'Hira',
+        roll : 1291,
+        reg : '12814',
+        gender : 'Female',
+        age : '17',
+        class : '4',
+        location : 'Dhaka',
+        fee : 5960
+    },
+    {
+        names : 'Helena',
+        roll : 1292,
+        reg : '128592',
+        gender : 'Female',
+        age : '23',
+        class : '3',
+        location : 'Dhaka',
+        fee : 1436
+    },
+    {
+        names : 'Helal',
+        roll :1295,
+        reg : '12852',
+        gender : 'Male',
+        age : '32',
+        class : '5',
+        location : 'Rajshahi',
+        fee : 1600
+    },
+    {
+        names : 'Rafeza',
+        roll : 1295,
+        reg : '128252',
+        gender : 'Female',
+        age : '24',
+        class : '3',
+        location : 'Rajshahi',
+        fee : 1463
+    },
+    {
+        names : 'Razi',
+        roll : 1296,
+        reg : '12125',
+        gender : 'Female',
+        age : '33',
+        class : '5',
+        location : 'Dhaka',
+        fee : 2020
+    },
+    {
+        names : 'Nabil',
+        roll : 1210,
+        reg : '128551',
+        gender : 'Male',
+        age : '11',
+        class : '4',
+        location : 'Dhaka',
+        fee : 1236
+    },
+    {
+        names : 'Tota Mia',
+        roll : 1286,
+        reg : '165263',
+        gender : 'Male',
+        age : '35',
+        class : '5',
+        location : 'Rajshahi',
+        fee : 1260
+    },
+    {
+        names : 'Nurnabi',
+        roll : 1211,
+        reg : '128650',
+        gender : 'Male',
+        age : '28',
+        class : '2',
+        location : 'Dhaka',
+        fee : 1330
+    },
+    {
+        names : 'Sorna',
+        roll : 1212,
+        reg : '128254',
+        gender : 'Female',
+        age : '19',
+        class : '5',
+        location : 'Rajshahi',
+        fee : 1520
+    },
+    {
+        names : 'Boni',
+        roll : 1213,
+        reg : '12013',
+        gender : 'Male',
+        age : '25',
+        class : '3',
+        location : 'Dhaka',
+        fee : 1450
+    },
+    {
+        names : 'Jesmin',
+        roll : 1213,
+        reg : '128250',
+        gender : 'Female',
+        age : '25',
+        class : '4',
+        location : 'Rajshahi',
+        fee : 1600
+    },
+    {
+        names : 'Juthy',
+        roll : 1215,
+        reg : '1265',
+        gender : 'Female',
+        age : '21',
+        class : '5',
+        location : 'Dhaka',
+        fee : 2020
+    },
+    {
+        names : 'Md Atik',
+        roll : 1216,
+        reg : '125154',
+        gender : 'Male',
+        age : '25',
+        class : '4',
+        location : 'Dhaka',
+        fee : 2030
+    },
+    {
+        names : 'Eshita',
+        roll : 1220,
+        reg : '1285320',
+        gender : 'Female',
+        age : '18',
+        class : '3',
+        location : 'Rajshahi',
+        fee : 1650
+    },
+    {
+        names : 'Tannova',
+        roll : 1221,
+        reg : '1285540',
+        gender : 'Female',
+        age : '7',
+        class : '5',
+        location : 'Dhaka',
+        fee : 1540
+    },
+    {
+        names : 'Samiul',
+        roll : 1222,
+        reg : '128320',
+        gender : 'Male',
+        age : '17',
+        class : '3',
+        location : 'Rajshahi',
+        fee : 1630
+    },
+    {
+        names : 'Meghla',
+        roll : 1223,
+        reg : '125852',
+        gender : 'Female',
+        age : '23',
+        class : '5',
+        location : 'Dhaka',
+        fee : 3200
+    },
+    {
+        names : 'Rafi',
+        roll : 1224,
+        reg : '26222',
+        gender : 'Male',
+        age : '26',
+        class : '3',
+        location : 'Rajshahi',
+        fee : 3636
+    },
+    {
+        names : 'Rohan',
+        roll : 1225,
+        reg : '128623',
+        gender : 'Male',
+        age : '17',
+        class : '4',
+        location : 'Dhaka',
+        fee : 1450
+    },
+    {
+        names : 'Borsha',
+        roll : 1226,
+        reg : '121205',
+        gender : 'Female',
+        age : '32',
+        class : '4',
+        location : 'Rajshahi',
+        fee : 2062
+    },
+    {
+        names : 'Omio',
+        roll : 1231,
+        reg : '125810',
+        gender : 'Male',
+        age : '12',
+        class : '4',
+        location : 'Dhaka',
+        fee : 1200
+    },
+    {
+        names : 'Mowsumi',
+        roll : 1232,
+        reg : '1286220',
+        gender : 'Female',
+        age : '33',
+        class : '3',
+        location : 'Dhaka',
+        fee : 1450
+    },
+    {
+        names : 'Sobuj',
+        roll : 1233,
+        reg : '128652',
+        gender : 'Male',
+        age : '26',
+        class : '5',
+        location : 'Rajshahi',
+        fee : 1605
+    },
+    {
+        names : 'Ebrahim',
+        roll : 1234,
+        reg : '128620',
+        gender : 'Male',
+        age : '12',
+        class : '4',
+        location : 'Dhaka',
+        fee : 1623
+    },
+    {
+        names : 'Zeam',
+        roll : 1235,
+        reg : '125412',
+        gender : 'Male',
+        age : '20',
+        class : '5',
+        location : 'Dhaka',
+        fee : 1202
+    },
 
-    ['Nabil','1801','11','03','Male','Rajshahi','2650','3.5'],
-    ['Sorna','1802','27','05','Female','Pabna','3560','4.15'],
-    ['Boni','1803','25','04','Male','Dhaka','3300','2.66'],
-    ['Jesmin','1804','16','03','Female','Pabna','4520','4.00'],
-    ['Juthy','1805','25','03','Female','Pabna','2300','0.00'],
-    ['Atik','1806','21','05','Male','Dhaka','2632','1.00'],
-    ['Biru','1807','08','04','Male','Dhaka','4200','1.99'],
-    ['Rohim','1808','31','05','Male','Rajshahi','2100','4.99'],
-    ['Alpona','1809','10','03','Female','Pabna','3500','4.88'],
-    ['Rumi','1890','34','04','Female','Rajshahi','4520','3.78'],
-
-    ['Samiul','8501','34','05','Male','Dhaka','4520','4.00'],
-    ['Sowkin','8502','34','04','Male','Rajshahi','1520','2.00'],
-    ['Zeam','8503','34','04','Male','Pabna','3200','1.00'],
-    ['Meghla','5004','13','03','Female','Rajshahi','1500','0.00'],
-    ['Moon','8505','34','04','Female','Dhaka','2120','4.68'],
-    ['Hafca','8506','27','05','Female','Pabna','2303','2.58'],
-    ['Sajid','8507','34','04','Male','Dhaka','3260','3.86'],
-    ['Muktadir','8508','34','04','Female','Pabna','3620','2.33'],
-    ['Rohan','8509','34','04','Male','Rajshahi','760','1.37'],
-    ['Rafi','8510','34','04','Male','Dhaka','3263','0.00']
 ]
 
 /**
@@ -43,11 +312,12 @@ const studentData = [
 
 //     console.log(`
 
-//         Id ; ${Data[1]}
-//         Name : ${Data[0]} 
-//         Admission Fee : ${Data[6]}`)
+//         Serial : ${index +1}
+//         Name : ${Data.names} 
+//         Roll ; ${Data.roll}
+//         Admission Fee : ${Data.fee}`)
 
-//         totalFees += Number(Data[6])
+//         totalFees += Number(Data.fee)
 // });
 
 // console.log(`
@@ -65,14 +335,14 @@ const studentData = [
 
 // studentData.sort().map( (Data,index) => {
 
-//     if (Data[4] === 'Female') {
+//     if (Data.gender === 'Female') {
 //         console.log(`
         
-//         Name : ${Data[0]}
-//         Roll : ${Data[1]}
-//         Age : ${Data[2]}
-//         Gender : ${Data[4]}
-//         Location : ${Data[5]}
+//         Name : ${Data.names}
+//         Roll : ${Data.roll}
+//         Age : ${Data.age}
+//         Gender : ${Data.gender}
+//         Location : ${Data.location}
         
 //         `)
 //     }
@@ -88,15 +358,15 @@ const studentData = [
 
 // studentData.forEach( (Data,index) => {
 
-//     if ( Data[3] == 3) {
+//     if ( Data.class == 5) {
 
 //         console.log(`  
-//         Name : ${Data[0]}
-//         Class : ${Data[3]}
-//         Roll : ${Data[1]}
-//         Age : ${Data[2]}
-//         Gender : ${Data[4]}
-//         Location : ${Data[5]}     
+//         Name : ${Data.names}
+//         Class : ${Data.class}
+//         Roll : ${Data.roll}
+//         Age : ${Data.age}
+//         Gender : ${Data.gender}
+//         Location : ${Data.location}     
 //         `)
 //     }
 // })
@@ -112,17 +382,19 @@ const studentData = [
 
 // studentData.forEach( (Data,index) => {
 
-//     if (Data[5] == 'Rajshahi') {
+//     if (Data.location == 'Rajshahi') {
 //         console.log(`  
-//          Name : ${Data[0]}
-//          Class : ${Data[3]}
-//          Roll : ${Data[1]}
-//          Age : ${Data[2]}
-//          Gender : ${Data[4]}
-//          Location : ${Data[5]}     
+//         Name : ${Data.names}
+//         Class : ${Data.class}
+//         Roll : ${Data.roll}
+//         Age : ${Data.age}
+//         Gender : ${Data.gender}
+//         Location : ${Data.location}     
 //          `)
 //     }
 // } )
+
+
 
 
 /**
@@ -130,14 +402,15 @@ const studentData = [
  */
 
 // studentData.forEach( (Data,index) => {
-//     if ( Data[2] >= 10 && Data[2] <= 25) {
+//     if ( Data.age >= 10 && Data.age <= 25) {
+
 //         console.log(`  
-//          Name : ${Data[0]}
-//          Age : ${Data[2]}
-//          Roll : ${Data[1]}
-//          Age : ${Data[2]}
-//          Gender : ${Data[4]}
-//          Location : ${Data[5]}     
+//         Name : ${Data.names}
+//         Class : ${Data.class}
+//         Roll : ${Data.roll}
+//         Age : ${Data.age}
+//         Gender : ${Data.gender}
+//         Location : ${Data.location}  
 //           `)
 //     }
 // })
